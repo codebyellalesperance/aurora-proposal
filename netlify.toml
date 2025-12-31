@@ -1,3 +1,4 @@
 [build]
   publish = "."
-  command = ""
+  command = "echo 'No build needed'"
+  ignore = "exit 0"
