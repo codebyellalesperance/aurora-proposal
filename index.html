@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- HTML Meta Tags -->
+  <title>Aurora | Master the Art of Living.</title>
+  <meta name="description" content="The Operating System for High Performance Living" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://joinaurora.co/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aurora | Master the Art of Living." />
+  <meta property="og:description" content="The Operating System for High Performance Living" />
+  <meta property="og:image" content="opengraph.jpg" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="joinaurora.co" />
+  <meta property="twitter:url" content="https://joinaurora.co/" />
+  <meta name="twitter:title" content="Aurora | Master the Art of Living." />
+  <meta name="twitter:description" content="The Operating System for High Performance Living" />
+  <meta name="twitter:image" content="opengraph.jpg" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-48x48.png" sizes="48x48" />
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128" />
+  <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="webclip.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+  <div class="animation-container">
+    <div class="background-video">
+      <video autoplay muted loop playsinline fetchpriority="high" preload="auto" aria-hidden="true"
+        poster="img/aurora-fallback.jpg">
+        <source src="https://res.cloudinary.com/dpvbckv2c/video/upload/v1730989060/aurora-bg-video_lj5rru.mp4"
+          type="video/mp4" />
+      </video>
+    </div>
+    <div class="mask">
+      <div class="mask-hole"></div>
+    </div>
+    <div class="loader">
+      <img class="complete-logo-wrapper" src="/img/aurora-logo.svg" alt="Aurora Logo" fetchpriority="high"
+        loading="eager" decoding="async" importance="high" />
+      <div class="full-logo-wrapper">
+        <div class="perspective-container">
+          <div class="section-holder" id="section-holder">
+            <div class="logo-wrapper" id="logo1">
+              <img src="/img/logo-o.png" alt="" />
+            </div>
+            <div class="logo-wrapper" id="logo2">
+              <img src="/img/logo-o.png" alt="" />
+            </div>
+            <div class="logo-wrapper" id="logo3">
+              <img src="/img/logo-o.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Careers Link Removed -->
+  <div class="email-container">
+    <a class="email" href="mailto:ella.lesperance@outlook.com">ella.lesperance@outlook.com</a>
+  </div>
+  <div class="persona-button">
+    <a href="#personas" style="margin: 0 10px; color: white; text-decoration: none">Personas</a>
+    <a href="#scaling" style="margin: 0 10px; color: white; text-decoration: none">Scaling</a>
+    <a href="#considerations" style="margin: 0 10px; color: white; text-decoration: none">Additional Considerations</a>
+    <a href="#contact" style="margin: 0 10px; color: white; text-decoration: none">Contact</a>
+  </div>
+
+  <div class="content-container">
+    <div class="content-text-wrapper">
+      <h1>Master the art of living.</h1>
+      <div class="subtitle">
+        <div class="subtitle-line">
+          <span><i>... and maybe master the art of finding the right help too:)</i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="personas-section-container" id="personas">
+    <h2 class="personas-section-title">Three Lives. One System.</h2>
+    <div class="personas-grid">
+      <a href="persona-1.html" class="persona-card">
+        <div class="persona-image-wrapper">
+          <img src="img/ethan.png" alt="Ethan Cole" class="persona-image" />
+        </div>
+        <div class="persona-content">
+          <span class="persona-name">Ethan Cole</span>
+          <h3>The Visionary</h3>
+          <p>Architecting the future.</p>
+        </div>
+      </a>
+      <a href="persona-2.html" class="persona-card">
+        <div class="persona-image-wrapper">
+          <img src="img/maya.png" alt="Dr. Maya Thompson" class="persona-image" />
+        </div>
+        <div class="persona-content">
+          <span class="persona-name">Dr. Maya Thompson</span>
+          <h3>The Operator</h3>
+          <p>Optimizing the present.</p>
+        </div>
+      </a>
+      <a href="persona-3.html" class="persona-card">
+        <div class="persona-image-wrapper">
+          <img src="img/dani.png" alt="Daniel Almasi" class="persona-image" />
+        </div>
+        <div class="persona-content">
+          <span class="persona-name">Daniel Almasi</span>
+          <h3>The Catalyst</h3>
+          <p>Accelerating change.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scaling Section -->
+  <div class="scaling-section" id="scaling">
+
+    <!-- Hero -->
+    <div class="scaling-hero">
+      <h1>Scaling to 100</h1>
+      <p class="scaling-hero-stats">700 personalized recommendations per week.<br>Each timed. Each bookable. Each human.
+      </p>
+      <p class="scaling-hero-cta">Here's how.</p>
+    </div>
+
+    <!-- The Bottleneck -->
+    <div class="scaling-block">
+      <h2>The Bottleneck</h2>
+      <div class="code-diagram">
+        <div class="diagram-row">Member Data → Human Reads → Human Researches → Human Writes</div>
+        <div class="diagram-row">→ Human Delivers → Human Tracks</div>
+      </div>
+      <p class="scaling-callout">This works beautifully at 10 members.<br>It breaks at 100.</p>
+      <p class="scaling-insight">The question isn't human vs. AI.<br>It's: <em>where does human judgment create the most
+          value?</em></p>
+    </div>
+
+    <!-- The Architecture -->
+    <div class="scaling-block">
+      <h2>The Architecture</h2>
+      <p class="scaling-subtitle">Five layers. One system.</p>
+
+      <!-- Layer 1: Intelligence -->
+      <div class="layer-card">
+        <div class="layer-header">
+          <span class="layer-number">01</span>
+          <h3>Automated Intelligence Layer</h3>
+        </div>
+        <p class="layer-description">Ingests member data. Surfaces signals, not just information.</p>
+        <div class="code-diagram small">
+          <div class="diagram-row">Calendar parser → Detects patterns, gaps, conflicts</div>
+          <div class="diagram-row">Health integration → Flags HRV drops, sleep issues</div>
+          <div class="diagram-row">Intent extractor → Finds stated goals vs. reality</div>
+          <div class="diagram-row">Signal generator → Outputs prioritized moments</div>
+        </div>
+        <div class="layer-example">
+          <strong>Example output:</strong> "Ethan: HRV down 24pts, board meeting in 5 days → Recovery intervention"
+        </div>
+        <div class="layer-footer">
+          <div class="layer-metric"><span>Human role:</span> Review signals. Add context. Override priorities.</div>
+          <div class="layer-metric highlight"><span>Time saved:</span> 45 min/member → 5 min/member</div>
+        </div>
+      </div>
+
+      <!-- Layer 2: Recommendations -->
+      <div class="layer-card">
+        <div class="layer-header">
+          <span class="layer-number">02</span>
+          <h3>Recommendation Engine</h3>
+        </div>
+        <p class="layer-description">Matches signals to pre-vetted inventory. Generates 80% drafts.</p>
+        <div class="code-diagram small">
+          <div class="diagram-row">Inventory database → Tagged by location, vibe, category</div>
+          <div class="diagram-row">Matching algorithm → Connects signals to options</div>
+          <div class="diagram-row">Template library → Frameworks for common rec types</div>
+          <div class="diagram-row">Draft generator → Outputs near-complete recs</div>
+        </div>
+        <div class="layer-footer">
+          <div class="layer-metric"><span>Human role:</span> Refine the draft. Add insight. Adjust tone.</div>
+          <div class="layer-metric highlight"><span>Time saved:</span> 30 min/rec → 5 min/rec</div>
+        </div>
+      </div>
+
+      <!-- Layer 3: Timing -->
+      <div class="layer-card">
+        <div class="layer-header">
+          <span class="layer-number">03</span>
+          <h3>Timing & Delivery</h3>
+        </div>
+        <p class="layer-description">Determines when to send. Manages channels. Prevents fatigue.</p>
+        <div class="code-diagram small logic">
+          <div class="diagram-row">IF hrv &lt; baseline * 0.8</div>
+          <div class="diagram-row">AND next_event &gt; 2 hours</div>
+          <div class="diagram-row">AND last_rec &gt; 24 hours</div>
+          <div class="diagram-row highlight-row">→ TRIGGER: recovery recommendation</div>
+          <div class="diagram-row highlight-row">→ CHANNEL: app notification</div>
+        </div>
+        <div class="layer-footer">
+          <div class="layer-metric"><span>Human role:</span> Set the rules. Override when context demands.</div>
+        </div>
+      </div>
+
+      <!-- Layer 4: Execution -->
+      <div class="layer-card">
+        <div class="layer-header">
+          <span class="layer-number">04</span>
+          <h3>Execution & Fulfillment</h3>
+        </div>
+        <p class="layer-description moat">This is Aurora's moat. Anyone can recommend. Aurora books.</p>
+        <div class="code-diagram small">
+          <div class="diagram-row">Availability check → Real-time inventory</div>
+          <div class="diagram-row">Booking automation → Direct integrations + concierge</div>
+          <div class="diagram-row">Confirmation flow → Member confirms → booking executes</div>
+          <div class="diagram-row">Fallback system → Alt suggestion if unavailable</div>
+        </div>
+        <div class="layer-rule">Rule: Never recommend something you can't deliver.</div>
+      </div>
+
+      <!-- Layer 5: Learning -->
+      <div class="layer-card">
+        <div class="layer-header">
+          <span class="layer-number">05</span>
+          <h3>Feedback & Optimization</h3>
+        </div>
+        <p class="layer-description">Every interaction teaches the system.</p>
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <span class="metric-label">Open rate</span>
+            <span class="metric-question">Is timing right?</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Confirmation rate</span>
+            <span class="metric-question">Is it relevant?</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Execution rate</span>
+            <span class="metric-question">Did they do it?</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-label">Satisfaction</span>
+            <span class="metric-question">Did it delight?</span>
+          </div>
+        </div>
+        <div class="learning-loops">
+          <h4>Learning loops:</h4>
+          <ul>
+            <li><strong>Member-level:</strong> "Ethan confirms 80% dining, 20% wellness → weight dining"</li>
+            <li><strong>Segment-level:</strong> "Founders prefer permission framing"</li>
+            <li><strong>Inventory-level:</strong> "Onodera 95% satisfaction → prioritize"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Human-AI Split -->
+    <div class="scaling-block">
+      <h2>The Split</h2>
+      <p class="scaling-subtitle">Where AI handles volume. Where humans handle moments.</p>
+
+      <div class="split-table">
+        <div class="split-header">
+          <div class="split-cell task"></div>
+          <div class="split-cell ai">AI</div>
+          <div class="split-cell human">Human</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Signal detection</div>
+          <div class="split-cell ai">✓</div>
+          <div class="split-cell human">Review</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Inventory matching</div>
+          <div class="split-cell ai">✓</div>
+          <div class="split-cell human">Curate</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Draft generation</div>
+          <div class="split-cell ai">✓</div>
+          <div class="split-cell human">Refine</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Timing & delivery</div>
+          <div class="split-cell ai">✓</div>
+          <div class="split-cell human">Set rules</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Standard bookings</div>
+          <div class="split-cell ai">✓</div>
+          <div class="split-cell human">—</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Complex bookings</div>
+          <div class="split-cell ai">—</div>
+          <div class="split-cell human">✓</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Relationship management</div>
+          <div class="split-cell ai">—</div>
+          <div class="split-cell human">✓</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Engagement analysis</div>
+          <div class="split-cell ai">✓</div>
+          <div class="split-cell human">Interpret</div>
+        </div>
+        <div class="split-row">
+          <div class="split-cell task">Playbook updates</div>
+          <div class="split-cell ai">—</div>
+          <div class="split-cell human">✓</div>
+        </div>
+      </div>
+
+      <div class="split-summary">
+        <p><strong>The strategist's job at scale:</strong></p>
+        <p>Not writing 700 recommendations.<br>
+          Curating the 70 that need human touch.<br>
+          Building access competitors can't match.</p>
+      </div>
+    </div>
+
+    <!-- Requirements -->
+    <div class="scaling-block">
+      <h2>What Must Be True</h2>
+      <p class="scaling-subtitle">Requirements for daily recs to 100 members.</p>
+
+      <div class="requirements-grid">
+        <div class="requirement-group">
+          <h4>Data Infrastructure</h4>
+          <ul class="checklist">
+            <li>Unified member profiles with real-time sync</li>
+            <li>Clean signal extraction</li>
+            <li>Historical engagement data</li>
+          </ul>
+        </div>
+        <div class="requirement-group">
+          <h4>Inventory Depth</h4>
+          <ul class="checklist">
+            <li>Pre-vetted options across all categories and geographies</li>
+            <li>Relationship-managed access to high-demand venues</li>
+            <li>Real-time availability or concierge capacity</li>
+          </ul>
+        </div>
+        <div class="requirement-group">
+          <h4>AI Tooling</h4>
+          <ul class="checklist">
+            <li>Signal detection tuned to "proactive moments"</li>
+            <li>Matching that understands vibe, not just category</li>
+            <li>Draft generation that sounds human</li>
+          </ul>
+        </div>
+        <div class="requirement-group">
+          <h4>Human Layer</h4>
+          <ul class="checklist">
+            <li>100% review on first-time member recs</li>
+            <li>Review on all high-stakes recs</li>
+            <li>Clear escalation paths</li>
+          </ul>
+        </div>
+        <div class="requirement-group">
+          <h4>Execution</h4>
+          <ul class="checklist">
+            <li>Concierge team or automation for fulfillment</li>
+            <li>&lt;2 hour confirmation SLA</li>
+            <li>Fallback inventory</li>
+          </ul>
+        </div>
+        <div class="requirement-group">
+          <h4>Feedback</h4>
+          <ul class="checklist">
+            <li>Recommendation-level tracking</li>
+            <li>Member preference learning</li>
+            <li>Weekly optimization reviews</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optimization Curve -->
+    <div class="scaling-block">
+      <h2>Week-Over-Week Optimization</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">Week 1-4</div>
+          <div class="timeline-content">
+            <h4>Calibration</h4>
+            <p>High human oversight. Learning preferences through trial.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Week 5-8</div>
+          <div class="timeline-content">
+            <h4>Personalization</h4>
+            <p>System learns patterns. Timing sharpens. Confirmation rates rise.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Week 9-12</div>
+          <div class="timeline-content">
+            <h4>Anticipation</h4>
+            <p>Predictive, not reactive. Recommendations arrive before members realize they need them.</p>
+          </div>
+        </div>
+        <div class="timeline-item final">
+          <div class="timeline-marker">Ongoing</div>
+          <div class="timeline-content">
+            <h4>Compounding Trust</h4>
+            <p>Each win increases willingness. Members start delegating: <em>"Aurora, just book it."</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Video Divider: City -->
+  <div class="video-divider">
+    <video autoplay muted loop playsinline>
+      <source src="videos/city.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- Considerations Section -->
+  <div class="considerations-section" id="considerations">
+
+    <!-- Hero -->
+    <div class="considerations-hero">
+      <h1>Additional Considerations</h1>
+      <p class="considerations-tagline">The difference between proactive and intrusive is one message.</p>
+    </div>
+
+    <!-- Magic vs Creepy -->
+    <div class="consideration-block">
+      <h2>The Line Between Magic and Creepy</h2>
+      <p class="consideration-intro">Personalization has a threshold. Cross it and care becomes surveillance.</p>
+      <div class="magic-creepy-grid">
+        <div class="magic-card">
+          <span class="card-label magic">Magic</span>
+          <p>"Your HRV is down—here's a recovery option."</p>
+        </div>
+        <div class="creepy-card">
+          <span class="card-label creepy">Creepy</span>
+          <p>"You seem stressed about your board meeting."</p>
+        </div>
+      </div>
+      <p class="consideration-rule">Surface patterns. Don't narrate them. Let members connect their own dots.</p>
+    </div>
+
+    <!-- When NOT to Recommend -->
+    <div class="consideration-block">
+      <h2>When NOT to Recommend</h2>
+      <p class="consideration-intro">Proactive doesn't mean constant.</p>
+      <div class="quiet-list">
+        <h4>Go quiet when:</h4>
+        <ul>
+          <li><strong>Major life event</strong> (death, divorce, crisis) → Pause. "We're here when you need us."</li>
+          <li><strong>Engagement drops suddenly</strong> → Don't increase volume. Reach out personally.</li>
+          <li><strong>They're on a genuine retreat</strong> → Don't interrupt with more options.</li>
+          <li><strong>3+ declined recs in a row</strong> → Recalibrate. Ask what changed.</li>
+        </ul>
+      </div>
+      <p class="consideration-rule">Sometimes presence without action is the most proactive move.</p>
+    </div>
+
+    <!-- Life Events Detection -->
+    <div class="consideration-block">
+
+
+      <!-- Cultural Calibration -->
+      <div class="consideration-block">
+        <h2>Cultural Calibration</h2>
+        <p class="consideration-intro">Global members, local context.</p>
+        <ul class="cultural-list">
+          <li><strong>Tokyo dining:</strong> the experience matters, not the Instagram following</li>
+          <li><strong>LA dining:</strong> social proof matters more</li>
+          <li><strong>Gifting:</strong> 4 is unlucky in Chinese culture; white flowers signal mourning in parts of Asia;
+            alcohol doesn't work for everyone</li>
+        </ul>
+        <p class="consideration-rule">Tag inventory with cultural considerations. Never assume culture from location.
+        </p>
+      </div>
+
+      <!-- The Trust Ladder -->
+      <div class="consideration-block">
+        <h2>The Trust Ladder</h2>
+        <p class="consideration-intro">Not every member is ready for "we booked you a float tank."</p>
+        <div class="trust-ladder">
+          <div class="trust-level">
+            <span class="level-number">1</span>
+            <span class="level-mode">Logistics</span>
+            <span class="level-example">"Your flight is confirmed."</span>
+          </div>
+          <div class="trust-level">
+            <span class="level-number">2</span>
+            <span class="level-mode">Decisions</span>
+            <span class="level-example">"We recommend X over Y."</span>
+          </div>
+          <div class="trust-level">
+            <span class="level-number">3</span>
+            <span class="level-mode">Anticipation</span>
+            <span class="level-example">"Your HRV is down—here's an option."</span>
+          </div>
+          <div class="trust-level">
+            <span class="level-number">4</span>
+            <span class="level-mode">Architecture</span>
+            <span class="level-example">"Here's your year mapped out."</span>
+          </div>
+          <div class="trust-level level-five">
+            <span class="level-number">5</span>
+            <span class="level-mode">Delegation</span>
+            <span class="level-example">"Aurora, just handle it."</span>
+          </div>
+        </div>
+        <p class="consideration-rule">Never skip levels. Earn the right to go deeper.</p>
+      </div>
+
+      <!-- Failure Recovery -->
+      <div class="consideration-block">
+        <h2>Failure Recovery</h2>
+        <p class="consideration-intro">Recommendations will fail. The response defines the brand.</p>
+        <div class="failure-grid">
+          <div class="failure-card">
+            <h4>Recommendation miss</h4>
+            <p>"That wasn't right. Tell us what we missed." Update profile. Never repeat.</p>
+          </div>
+          <div class="failure-card">
+            <h4>Execution failure</h4>
+            <p>Own it. No excuses. Immediate alternative + something extra.</p>
+          </div>
+          <div class="failure-card">
+            <h4>Timing failure</h4>
+            <p>"Bad timing on our end. This will be here when you're ready."</p>
+          </div>
+        </div>
+        <p class="consideration-rule">Failures handled well build more trust than successes.</p>
+      </div>
+
+      <!-- Privacy as Product -->
+      <div class="consideration-block">
+        <h2>Privacy as Product</h2>
+        <p class="consideration-intro">Intimate access is a privilege, not a right.</p>
+        <ul class="privacy-list">
+          <li><strong>Minimize:</strong> Collect only what improves recommendations</li>
+          <li><strong>Transparency:</strong> Members see what Aurora knows; "why this rec?" always has an answer</li>
+          <li><strong>Control:</strong> Easy opt-out, pause button that works, different comfort levels for different
+            areas</li>
+        </ul>
+        <p class="consideration-rule">Aurora knows a lot so it can do a lot. Members control both.</p>
+      </div>
+
+      <!-- The Long Game -->
+      <div class="consideration-block">
+        <h2>The Long Game</h2>
+        <div class="long-game-timeline">
+          <div class="lg-item">
+            <span class="lg-year">Year 1</span>
+            <span class="lg-text">"Books things for me"</span>
+          </div>
+          <div class="lg-item">
+            <span class="lg-year">Year 2</span>
+            <span class="lg-text">"Finds things I didn't know I wanted"</span>
+          </div>
+          <div class="lg-item">
+            <span class="lg-year">Year 3</span>
+            <span class="lg-text">"Knows what I need before I do"</span>
+          </div>
+          <div class="lg-item final">
+            <span class="lg-year">Year 5</span>
+            <span class="lg-text">"Helps me design my life"</span>
+          </div>
+        </div>
+        <p class="consideration-insight">More trust → more delegation → more learning → better service.</p>
+        <p class="consideration-rule">Flywheel, not funnel.</p>
+      </div>
+
+    </div>
+
+    <!-- Video Divider: Mountain -->
+    <div class="video-divider">
+      <video autoplay muted loop playsinline>
+        <source src="videos/kites.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+      <div class="contact-content">
+        <h2>About This Submission</h2>
+        <div class="contact-statement">
+          <p>I spent ~4 hours on this because the problem is genuinely interesting.</p>
+          <p>Most AI products optimize for engagement. Aurora is trying to optimize for <em>life</em>, which means
+            understanding taste, timing, and the difference between helpful and intrusive.</p>
+          <p>That's the kind of problem I want to work on.</p>
+        </div>
+        <div class="contact-divider">—</div>
+        <div class="contact-info">
+          <h3>Ella L'Esperance</h3>
+          <p class="contact-role">Software Engineer → Taste Engineer</p>
+          <p class="contact-location">New York, NY</p>
+          <div class="contact-links">
+            <a href="mailto:ella.lesperance@outlook.com" class="contact-link">ella.lesperance@outlook.com</a>
+            <a href="https://www.linkedin.com/in/ellalesperance/" target="_blank" class="contact-link">LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
